@@ -15,9 +15,9 @@ if (amount < 3 || amount > 3)
 {
     Console.WriteLine("Вы ввели не трехзначное число");
 }
-int Secondigit(int num)
+int Secondigit(int number)
 {
-    int secondDigit = (num/10)%10;
+    int secondDigit = (number/10)%10;
     return secondDigit; 
 }
 int finalNum = Secondigit(num);

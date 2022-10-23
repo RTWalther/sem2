@@ -6,9 +6,15 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите число");
+Console.WriteLine("Введите трёхзначное число");
 int num = Convert.ToInt32(Console.ReadLine());
 
+int amount = num.ToString().Length;
+
+if (amount < 3 || amount > 3)
+{
+    Console.WriteLine("Вы ввели не трехзначное число");
+}
 int Secondigit(int num)
 {
     int secondDigit = (num/10)%10;
